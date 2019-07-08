@@ -1,0 +1,18 @@
+{
+  "name": "tutorial",
+  "version": "1.0.0",
+  "description": "tutorial ",
+  "main": "app11.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jacque",
+  "license": "ISC",
+  "dependencies": {
+    "lodash":"^4.17.11" //major.minor.patch verions, patch update: bug fixes, minor update: add new funcionalities and deprecate old funcionalities no breaking update
+    //major update: there was a breaking change, the new version is not compatible with the older versions
+    //^:4.x.x You  don't want make any major update, but if there is a minor or a patch update go ahead and download those packages
+    //~: you only want change updates 4.17.x
+    // if you don't want any update, the only version to use is the one that is written  
+}
+}
