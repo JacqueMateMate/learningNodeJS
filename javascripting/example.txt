@@ -1,0 +1,15 @@
+
+`const` is a signal that the identifier won’t be reassigned.
+`let`, is a signal that the variable may be reassigned, such as a counter in a loop, or a value swap in an algorithm. It also signals that the variable will be used only in the block it’s defined in, which is not always the entire containing function.
+`var` is now the weakest signal available when you define a variable in JavaScript. The variable may or may not be reassigned, and the variable may or may not be used for an entire function, or just for the purpose of a block or loop.
+Warning:
+With `let` and `const` in ES6, it’s no longer safe to check for an identifier’s existence using `typeof`:
+function foo () {
+  typeof bar;
+  let bar = ‘baz’;
+}
+foo(); // ReferenceError: can't access lexical declaration
+       // `bar' before initialization
+But you’ll be fine because you took my advice from “Programming JavaScript Applications” and you always initialize your identifiers before you try to use them…
+P.S.
+If you need to deallocate a value by unsetting it, you may consider `let` over `const`, but if you really need to micro-manage the garbage collector, you should probably watch “Slay’n the Waste Monster”, instead
