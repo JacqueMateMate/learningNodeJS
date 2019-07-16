@@ -4,3 +4,17 @@ https://stackoverflow.com/questions/20939648/issue-pushing-new-code-in-github/28
 add, commit and push
 https://stackoverflow.com/questions/3498035/git-add-all-files-modified-deleted-and-untracked
 anotehr test
+
+Remotes commands
+
+Add a remote
+git remote add <REMOTENAME> <URL>
+Change a remote URL
+git remote set-url <REMOTENAME> <URL>
+View remote connections
+git remote -v
+
+Github flow:
+
+https://guides.github.com/introduction/flow/
+
